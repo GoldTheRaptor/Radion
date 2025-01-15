@@ -5,7 +5,20 @@ body{
 .navbardiv{
     display: flex;
     justify-content: center;
-    padding: 1% 0% 1% 0%;
+    padding: 1% 0%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.cart{
+    width: 30px;
+    height: 30px;
+}
+
+.cart-div{
+    margin-right: 2%;
 }
 
 .navbarlist{
@@ -13,14 +26,33 @@ body{
     justify-content: space-evenly;
     width: 100%;
     padding: 0px;
-    margin: 0px;
+    margin: 0% 5%;
 }
 
 .navbarele{
     list-style-type: none;
+
+    a:hover{
+        font-size: 20px;
+        transition: 0.5s;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+    }
+
 }
 
-a{
-    text-decoration: none;
-    color: white;
+
+
+.main-product{
+    background-image: url(assets/gaming-laptop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
