@@ -53,7 +53,7 @@ body{
 
 
 .main-product-img{
-    background-image: url(assets/gaming-laptop.png);
+    background-image: url(assets/products/gaming-laptop.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -78,6 +78,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 0% 5% 5% 5%;
+    flex-direction: column;
 }
 
 
@@ -90,15 +91,25 @@ body{
 
 
 
+.product-image-mouse{
+    background-image: url(assets/products/mouse.png);
+}
+
 .product-image-keyboard{
-    background-image: url(assets/kayboard.png);
+    background-image: url(assets/products/kayboard.png);
+;
+}
+
+.product-image-mouse, .product-image-keyboard{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
-    height: 70vh;
-    margin-top: 5%;
+    height: 60vh;
+    margin-top: 3%;
 }
+
+
 
 .product-info{
 
