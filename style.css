@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Unbounded:wght@200..900&display=swap');
+
 body{
     background-color: #252626;
+    font-family: "Fjalla One", serif;
 }
 
 .navbardiv{
@@ -9,7 +12,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 1000;
-
+    background-color: #252626;
 }
 
 .cart{
@@ -33,11 +36,13 @@ body{
     list-style-type: none;
 
     a:hover{
-        font-size: 20px;
+        font-size: 25px;
         transition: 0.5s;
+        text-shadow: 0px 0px 10px #54f780;
     }
 
     a{
+        font-size: 20px;
         text-decoration: none;
         color: white;
         transition: 0.5s;
@@ -47,12 +52,95 @@ body{
 
 
 
-.main-product{
+.main-product-img{
     background-image: url(assets/gaming-laptop.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 120vh;
+    margin-top: 2%;
+}
+
+.main-product-info{
+    color: white;
+    font-size: 40px;
+}
+
+.main-product-info-div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.product-div{
+    display: flex;
+    justify-content: center;
+    margin: 0% 5% 5% 5%;
+}
+
+
+.product{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.product-image-keyboard{
+    background-image: url(assets/kayboard.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 70vh;
+    margin-top: 5%;
+}
+
+.product-info{
+
+    margin-bottom:-5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    p{
+        color: white;
+    }
+}
+
+.product-name{
+    font-size: 40px;
+}
+
+
+.product-link{
+    font-size: 20px;
+    margin-top: -2%;
+    text-decoration: none;
+    color: #54f780;
+    transition: 0.5s;
+}
+
+.product-link:hover{
+    font-size: 25px;
+    transition: 0.5s;
+    text-shadow: 0px 0px 10px #54f780;
+}
+
+
+
+.footer{
+    height: 20vh;
+    background-color: white;
+}
+
+.footer-info{
+    padding-top: 1%;
+    display: flex;
+    justify-content: center;
 }
