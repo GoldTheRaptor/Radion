@@ -97,16 +97,22 @@ body{
 
 .product-image-keyboard{
     background-image: url(assets/products/kayboard.png);
-;
 }
 
-.product-image-mouse, .product-image-keyboard{
+.product-image-mouse-pad{
+    background-image: url(assets/products/mouse-pad.png);
+}
+
+
+
+.product-image-mouse, .product-image-keyboard, .product-image-mouse-pad{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: flex;
     height: 60vh;
-    margin-top: 3%;
+    margin-top: 5%;
+    -webkit-user-drag: none;
 }
 
 
