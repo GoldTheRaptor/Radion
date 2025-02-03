@@ -3,6 +3,8 @@
 body{
     background-color: #252626;
     font-family: "Fjalla One", serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navbardiv{
@@ -11,13 +13,27 @@ body{
     padding: 1% 0%;
     position: sticky;
     top: 0;
+    margin: 0%;
     z-index: 1000;
-    background-color: #252626;
+    background-color: #1b1c1c;
 }
 
 .cart{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 0.5%;
+
+    .logo{
+        width: 33px;
+        height: 35px;
+
+    }
 }
 
 .cart-div{
@@ -29,7 +45,7 @@ body{
     justify-content: space-evenly;
     width: 100%;
     padding: 0px;
-    margin: 0% 5%;
+    margin: 1% 0% 1% -5%;
 }
 
 .navbarele{
@@ -50,6 +66,18 @@ body{
 
 }
 
+
+.news-div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.news a{
+    text-decoration: none;
+    color: black;
+}
 
 
 .main-product-img{
@@ -103,9 +131,32 @@ body{
     background-image: url(assets/products/mouse-pad.png);
 }
 
+.product-image-chair{
+    background-image: url(assets/products/chair.png);
+}
+
+.product-image-controller{
+    background-image: url(assets/products/controller.png);
+}
+
+.product-image-pc{
+    background-image: url(assets/products/desktop.png);
+}
+
+.product-image-headphones{
+    background-image: url(assets/products/headphones.png);
+}
+
+.product-image-monitor {
+    background-image: url(assets/products/monitor.png);
+}
+
+.product-image-mic{
+    background-image: url(assets/products/mic.png);
+}
 
 
-.product-image-mouse, .product-image-keyboard, .product-image-mouse-pad{
+.product-img{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -131,13 +182,17 @@ body{
 }
 
 .product-name{
-    font-size: 40px;
+    font-size: 50px;
+    margin-bottom: 0%;
+}
+
+.product-subtitle{
+    font-size: 25px;
 }
 
 
 .product-link{
     font-size: 20px;
-    margin-top: -2%;
     text-decoration: none;
     color: #54f780;
     transition: 0.5s;
@@ -152,12 +207,10 @@ body{
 
 
 .footer{
-    height: 20vh;
     background-color: white;
+    display: flex;
 }
 
 .footer-info{
-    padding-top: 1%;
-    display: flex;
-    justify-content: center;
+    padding-left: 1%;
 }
