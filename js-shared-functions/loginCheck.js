@@ -11,3 +11,12 @@ function checkLogin(){
         return true
     }
 }
+
+function changeNavBarUser(){
+    let username = localStorage.getItem("username")
+    let navBarUsername = document.getElementById("navBarUsername")
+
+    if(checkLogin() === true){
+        navBarUsername.innerHTML = username
+    }
+}

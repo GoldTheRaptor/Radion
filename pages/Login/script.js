@@ -47,4 +47,5 @@ function clearData(){
 
 window.onload = function(){
    checkLoginValidation() 
+   changeNavBarUser()
 } 
