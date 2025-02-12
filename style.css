@@ -55,18 +55,52 @@ body{
         font-size: 30px;
         transition: 0.5s;
         text-shadow: 0px 0px 10px #54f780;
-        font-style: oblique;
     }
 
     a{
-        font-size: 25px;
-        text-decoration: none;
-        color: white;
-        transition: 0.5s;
+            font-size: 25px;
+            text-decoration: none;
+            color: white;
+            transition: 0.5s;
     }
 
 }
 
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    min-width: 150px;
+    transform: translateX(-50%);
+
+
+
+
+    li{
+        padding: 10px;
+        background-color: #252626;
+        border-bottom: 1px solid white;
+        color: white;
+        transition: 0.5s;
+        z-index: 100000;
+    }
+
+
+    li:hover{
+        font-size: 25px;
+        transition: 0.5s;
+        text-shadow: 0px 0px 10px #54f780;
+    }
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;   
+}
 
 .news-div{
     background-color: white;
@@ -82,7 +116,7 @@ body{
     background-color: white;
     font-size: 20px;
     margin-top: 0px;
-
+    z-index: 1000;
     transition: 0.2s ease-in-out;
 }
 
