@@ -1,0 +1,117 @@
+.login-box{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    align-items: center;
+    margin: 0% 20%; 
+    color: white;
+    padding: 0px;
+    border-radius: 30px;
+}
+
+
+.username-div, .password-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        font-size: 25px;
+        margin-bottom: 1%;
+    }
+    
+}
+
+
+input[type="text"], input[type="password"]{
+    font-family: "Fjalla One", serif;
+    margin-top: 1%;
+    font-size: 20px;
+    border: none; 
+    border-radius: 50px;
+    width: 15vw;
+    height: 5vh;
+    transition: 0.5s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: 2px solid #54f780;
+    box-shadow: 0px 0px 15px #54f780;
+    transition: 0.5s;
+}
+
+.terms-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    a{
+        color: #54f780;
+        text-decoration: underline;
+    }
+}
+
+.terms-div input[type="checkbox"]{
+    align-self: center;
+    appearance: none; /* per rimuovere lo stile di base */
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.terms-div input[type="checkbox"]:checked {
+    border-color: #54f780;
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px #54f780;
+}
+
+.terms-div input[type="checkbox"]:checked::after{
+    content: 'X';
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.button-div{
+    height: 100%;
+}
+
+.login-button{
+    margin: 10% 0%;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 15vw;
+    height: 7vh;
+    background-color: #252626;
+    color: #54f780;
+    border: 1px solid #54f780;
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: "Fjalla One", serif;
+}
+
+.login-button:hover{
+    background-color: #54f780;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 15px #54f780;
+}
+
+
+.box{
+    margin-top: 5%; 
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
