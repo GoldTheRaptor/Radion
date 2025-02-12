@@ -11,8 +11,8 @@ function checkLoginHeader(){
     if(checkLogin() === true){
         closeHeader()
     }
-
-    if(checkLogin() === true){  
+    
+    if(checkLogin() === true){
         navBarUsername.innerHTML = username
     }
 }
