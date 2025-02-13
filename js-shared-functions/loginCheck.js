@@ -12,6 +12,8 @@ function checkLogin(){
     }
 }
 
+
+//la funzione sostituisce "registrati" con il nome dell'utente quando un login è presente 
 function changeNavBarUser(){
     let username = localStorage.getItem("username")
     let navBarUsername = document.getElementById("navBarUsername")

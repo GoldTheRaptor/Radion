@@ -7,12 +7,8 @@ function checkLoginHeader(){
     let username = localStorage.getItem("username")
     let navBarUsername = document.getElementById("navBarUsername")
 
-
     if(checkLogin() === true){
         closeHeader()
-    }
-    
-    if(checkLogin() === true){
         navBarUsername.innerHTML = username
     }
 }

@@ -5,6 +5,7 @@ body{
     font-family: "Fjalla One", serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 .navbardiv{
@@ -42,6 +43,34 @@ body{
     margin-right: 2%;
 }
 
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    min-width: 150px;
+    transform: translateX(-50%);
+
+    li{
+        padding: 10px;
+        background-color: #252626;
+        border-bottom: 1px solid white;
+        color: white;
+        transition: 0.5s;
+        z-index: 100000;
+    }
+
+
+    li:hover{
+        font-size: 25px;
+        transition: 0.5s;
+        text-shadow: 0px 0px 10px #54f780;
+    }
+}
+
 .navbarlist{
     display: flex;
     justify-content: space-evenly;
@@ -60,45 +89,14 @@ body{
     }
 
     a{
-            font-size: 25px;
-            text-decoration: none;
-            color: white;
-            transition: 0.5s;
-    }
-
-}
-
-
-.dropdown{
-    position: relative;
-}
-
-.dropdown-menu{
-    display: none;
-    position: absolute;
-    list-style-type: none;
-    min-width: 150px;
-    transform: translateX(-50%);
-
-
-
-
-    li{
-        padding: 10px;
-        background-color: #252626;
-        border-bottom: 1px solid white;
+        font-size: 25px;
+        text-decoration: none;
         color: white;
         transition: 0.5s;
-        z-index: 100000;
     }
 
-
-    li:hover{
-        font-size: 25px;
-        transition: 0.5s;
-        text-shadow: 0px 0px 10px #54f780;
-    }
 }
+
 
 .dropdown:hover .dropdown-menu{
     display: block;   
@@ -125,9 +123,9 @@ body{
 }
 
 .close-button:hover{
-    box-shadow: 0px 0px 10px red;
-    color: red;
-    border: 4px solid red;
+    box-shadow: 0px 0px 5px #d21127;
+    color: #d21127;
+    border: 4px solid #d21127;
     transition: 0.2s ease-in-out;
 }
 
@@ -137,20 +135,39 @@ body{
 }
 
 
+.underline{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+
 .news{
 
-
     a{
+        display: inline-block;
+        position: relative;
         font-size: 20px;
         text-decoration: none;
         color: black;
         transition: 0.5s;
     }
+    
+    a:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px; 
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s ;
+    }
 
-
-    a:hover{
-        text-decoration: underline;
-        transition: 0.5s;
+    a:hover::after{
+        transform: scaleX(1);
     }
 }
 
@@ -281,13 +298,24 @@ body{
     text-shadow: 0px 0px 10px #54f780;
 }
 
-
-
-.footer{
+.footer {
     background-color: white;
     display: flex;
+    width: 100%;
+    margin-top: 13vh;
+    justify-content: center;
 }
 
 .footer-info{
-    padding-left: 1%;
+    margin-left: 1%;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+
+    a:hover{
+        text-decoration: underline;
+    }
 }
